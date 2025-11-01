@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    border: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Container for the sign-in form */
+.signin {
+    display: flex;
+    justify-content: center;
+}
+
+.logo h1 {
+    height: 31px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.logo {
+    padding: none;
+}
+
+/* Form container styling */
+.container {
+    position: absolute;
+    top: 60px;
+    width: 330px;
+    border: 1px solid #d5d9d9;
+    padding: 14px 18px 14px 18px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+/* Heading for the form */
+.container h1 {
+    font-size: 28px;
+    color: #0f1111;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+    font-weight: 500;
+}
+
+/* Labels for the inputs */
+.container h3 {
+    font-size: 14px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+}
+
+h3 {
+    font-size: 14px;
+    color: #0f1111;
+    height: 22px;
+}
+
+/* Input field styling */
+.ip, .mobileNo, .password, .otp12 {
+    height: 21px;
+    width: 100%;
+    padding: 3px 7px;
+    border: 0.5px solid black;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.country {
+    width: 78px;
+    height: 31px;
+    padding: 0px 0px 2px 2px;
+    margin-right: 10px;
+    border: 0.5px solid black;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+
+/* Hover and focus effects for the country select */
+.country:hover {
+    border-color: #4CAF50;
+}
+
+.country:focus {
+    border-color: #007bff;
+    background-color: #e6f7ff;
+}
+
+/* Option styling */
+option {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Hover effect for the options */
+option:hover {
+    background-color: #e0f7fa;
+}
+
+/* Button styling */
+button, .Otp2 {
+    color: white;
+    width: 100%;
+    height: 29px;
+    border-radius: 9px;
+    background-color: #ff9900;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.Otp2 {
+    margin-top: 10px;
+}
+
+/* Message below the password field */
+.passmsg {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 2px;
+}
+
+.passmsg p {
+    font-size: 12px;
+    color: #0f1111;
+    width: 221px;
+    height: 15px;
+    margin-top: 2.5px;
+    margin-left: 1.5px;
+}
+
+/* Last message block for already having an account */
+.lastmsg h3 {
+    height: 17px;
+    width: 100%;
+}
+
+.lastmsg a {
+    color: #007185;
+    height: 18px;
+    width: 192px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.lastmsg {
+    margin-bottom: 12px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Flexbox for OTP request button */
+.btn1 {
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .ip, .mobileNo, .password, .otp12, .country {
+        width: 100%;
+    }
+
+    button, .Otp2 {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+
+    .lastmsg a {
+        font-size: 12px;
+    }
+}

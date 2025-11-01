@@ -1,0 +1,24 @@
+@charset "UTF-8";
+body {
+    background-color: #f8f9fa;
+}
+.container {
+    margin-top: 80px;
+}
+.card {
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.profile-image-pic {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+.btn-primary {
+    background-color: #007bff;
+    border-radius: 10px;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+}
